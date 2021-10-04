@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <title>Biblioteca EPIS</title>
+    <title>Bibliotecas EPIS</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
     <link type="image/x-icon" href="../img/epis1.png" rel="shortcut icon">
 </head>
