@@ -1,0 +1,212 @@
+/*<?php
+header("Content-Type:text/css ; charset: UTF-8");
+?>*/
+
+*{
+	margin: 0;
+	padding: 0;
+	color: #007aff;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	background:linear-gradient(90deg,#D0D3D4,#979A9A);
+	overflow-x: hidden;
+    padding: 30px;
+}
+#conta{
+
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: flex
+}
+#contaE{/*REGISTRO ESTUDIANTE*/
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h2{
+	color:#090909;
+}
+/*=======      LOGIN       ======*/
+#conta form{
+	/*border: 2px solid #000;*/
+	width: 30%;
+	height: 470px;
+	padding: 40px;
+	background: #F7F9F9 ;
+	/*display: flex;*/
+}
+input{/* CORREO-CONTRASEÑA */
+	 /*padding: 5px;!*Ttamaño de la caja de texto*!*/
+	 /*height: 30px;*/
+	 /*width: 90%;*/
+	 /*background: rgba(0, 0, 0,0);!* la caja dee texto desaparece_todo en  el contorno *!*/
+	 /*border: 0px;*/
+	 /*outline: 0px;*/
+	 /*border-bottom: 1px solid rgba(0,0,0,0.12);!* solo la linea de abajo *!*/
+
+	 /* font-size: 15px;!*TAMAÑO DE LA LETRA*!*/
+	box-sizing: border-box;
+	margin: 0;
+	border: none;
+	padding: 5px;
+	width: 90%;
+	height: 40px;
+	border-top: 27px solid transparent #00cc36 ;
+	color: #222;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 4px;
+	font-size: 17px;
+	-webkit-transition: border-bottom .2s,background-color .2s;
+	transition: border-bottom .2s,background-color .2s;
+	-webkit-appearance: none;
+
+	-webkit-writing-mode: horizontal-tb !important;
+
+	text-rendering: auto;
+	color: -internal-light-dark(black, white);
+	letter-spacing: normal;
+	word-spacing: normal;
+	line-height: normal;
+	text-indent: 0;
+	display: inline-block;
+	text-align: start;
+	appearance: auto;
+	-webkit-rtl-ordering: logical;
+	cursor: text;
+	background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+	margin: 0em;
+	padding: 1px 2px;
+	border-width: 2px;
+	border-style: inset;
+	border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+	border-image: initial;
+
+}
+
+input.button{/* BOTON INGRESAR*/
+	/*border:1px solid #000;!*BOTON COLOR BORDE*!*/
+	/*background-color:#ECF0F1;!*COLOR DE  FONDO*!*/
+	/*border-radius: 10px;*/
+	/*height: 30px;*/
+	/*width: 100%;*/
+	/*padding: center;*/
+	/*font-weight: 200px;*/
+	/*cursor: pointer;*/
+	/*font-size: 15px;!*mas grande la letra*!*/
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 30px;
+	letter-spacing: 0;
+	border-radius: 4px;
+	font-size: 16px;
+	text-align: center;
+	font-weight: 600;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	cursor: pointer;
+	color: #fff;
+	border:1px solid #000;
+	background: #00cc36;
+
+}
+.button:hover{
+	padding: 8px 18px ;
+}
+
+/*!*-a.button{*/
+/*	text-decoration: none; !*linea del link*!*/
+/*	border:1px solid #000;!*BOTON COLOR BORDE*!*/
+/*	height: 30px;!*BOTON ALTURA*!*/
+/*	width: 180px;!*BOTON ANCHO*!*/
+/*	border-radius: 10px;*/
+/*	background-color:#ECF0F1;!*COLOR DE  FONDO*!*/
+/*	padding: 5px 26px;*/
+/*	color: #090909;*/
+/*	!*border-radius: 5px;*!*/
+/*	height: 30px;*/
+/*	width: 48%;*/
+/*	font-weight: 200px;*/
+/*	cursor: pointer;*/
+/*	font-size: 15px;!*mas grande la letra*!*/
+/*}*!*/
+a.button ul:hover{
+	padding: 50px;
+
+}
+#contaE form{
+
+	border: 2px solid #000;
+	width: 400px;
+	height:600px;
+	/*background: #ADB8CA;*/
+	align-items: right;
+}
+.es_login{
+	box-shadow: 3px 3px red, -1em 0 0.4em olive;
+}
+.ctn-text{
+	border-radius:0px;
+	box-shadow:   3px 3px red;
+	width: 30%;
+		background-image: url(../img/EPIS.png);
+		background-position: center;
+		background-size: cover;
+		height: 470px;
+	}
+a.button{
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	width: 48%;
+	height: 30px;
+	border-radius: 4px;
+	font-size: 16px;
+	text-align: center;
+	font-weight: 600;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	cursor: pointer;
+	color: #fff;
+	border:1px solid #000;
+	background: #00cc36;
+}
+
+ input.input__eye {
+	 cursor: pointer;
+	 position: absolute;
+	 right: 12px;
+	 bottom: 12px;
+	 width: 20px;
+	 height: 20px;
+	 background-image: url(//https://www.iqiyipic.com/lequ/20210902/passport_eyes@2x.png);
+	 background-position: 0 0;
+	 background-position-x: 0px;
+	 background-position-y: 0px;
+	 background-size: 40px;
+	 display: inline-block;
+	 overflow: hidden;
+	 font-size: 0;
+	 line-height: 0;
+	 -webkit-box-sizing: border-box;
+	 box-sizing: border-box;
+ }
+
