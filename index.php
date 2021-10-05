@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-    <title>BIBLIOTECA EPIS</title>
+    <title>Biblioteca EPIS</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
     <link type="image/x-icon" href="../img/epis1.png" rel="shortcut icon">
 </head>
