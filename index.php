@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <title>Biblioteca EPIS</title>
+    <title>BIBLIOTECA EPIS</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
     <link type="image/x-icon" href="../img/epis1.png" rel="shortcut icon">
 </head>
@@ -31,7 +31,7 @@
                 </span>
                 <ul >
                     <li ><a class="dropdown-toggle" href="adm_login.php">Administrador </a></li>
-                    <li ><a class="dropdown-toggle" href="es_login.php">Estudiante </a> </li>
+                    <li ><a class="dropdown-toggle" href="es_login.php">ESTUDIANTE </a> </li>
                 </ul>
             </li>
         </ul>
