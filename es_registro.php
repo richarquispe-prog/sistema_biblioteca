@@ -34,105 +34,117 @@
 ?>
 <?php include('menu_administrador.php');?>
 
-	
-		<div class="container-fluid">
-	<!--      Card Ediit    -->
-                    <div class="row">
-                        <div class="col-lg-6 m-auto">
-                            <div class="card shadow mb-4">
-<div class="card-header py-3">
- <center>
-<!--<h3>BIBLIOTECA EPIS</h3>-->
- 	<h6 class="m-0 font-weight-bold text-success">
- REGISTRAR 
-    </h6></center>
-                                </div>
-		<form method="post">	
 
-	
-<div id="main-containe">	
-<div class="container">	
-		<!--<form method="post" class="es-reg">-->
-			<center>
-			<!--<img src="img/sistemas.png" width="600" height="100">-->
-			<!--<h2>BIBLIOTECA EPIS</h2><br>
+<div class="container-fluid">
+    <!--      Card Ediit    -->
+    <div class="row">
+        <div class="col-lg-6 m-auto">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <center>
+                        <!--<h3>BIBLIOTECA EPIS</h3>-->
+                        <h6 class="m-0 font-weight-bold text-success">
+                            REGISTRAR
+                        </h6>
+                    </center>
+                </div>
+                <form method="post">
+
+
+                    <div id="main-containe">
+                        <div class="container">
+                            <!--<form method="post" class="es-reg">-->
+                            <center>
+                                <!--<img src="img/sistemas.png" width="600" height="100">-->
+                                <!--<h2>BIBLIOTECA EPIS</h2><br>
 			<h3>REGISTRAR ESTUDIANTE</h3><br><br>-->
-			<?php echo isset($alert) ? $alert : ""; ?>
-	<div class="mb-3"><br>
-			<input type="text" name="nombre" placeholder="Nombres"  class="form-control"  required onkeypress="return sololetras(event)"  onpaste="return false" title="Debe contener solo  letras " ><!--?!.* (?: |$))-->
-			</div>
-			<div class="mb-3">
-			<input type="text" name="apellidos" required placeholder="Apellidos" class="form-control"  required onkeypress="return sololetras(event)"  onpaste="return false" title="Debe contener solo  letras " >
-			</div>
-			<div class="mb-3">
-			<input type="text" name="celular" required placeholder="celular"  class="form-control" onkeypress="return solonumero(event)"  onpaste="return false"  title="Debe contener 9 números y empezar con 9">
-		</div>
-		<div class="mb-3">
-			<input type="text" name="dni" required placeholder="DNI"   class="form-control"  onkeypress="return solonumero(event)"  onpaste="return false"  title="Debe contener">
-			</div>
-			<div class="mb-3">
-			<input type="text"name="correo" required placeholder="Correo" class="form-control" >
-			</div>
-			<div class="mb-3">
-			<input type="password" name="pass1" required placeholder="contraseña" class="form-control" >
-			</div>
-			<div class="mb-3">
-			<input type="password" name="pass2" required placeholder="repita contraseña" class="form-control" >
-			
-			</div>			
-			<!--<a href="es_login.php" class="btn btn-secondary">Volver</a>-->
-			<input type="submit"  value="Registrar" class="btn btn-success" class="button"><br>
-			
-	<br>
-			</center>
-</div>
-</div>
-		</form>
-	</div>
-</div>
-</div>
+                                <?php echo isset($alert) ? $alert : ""; ?>
+                                <div class="mb-3"><br>
+                                    <input type="text" name="nombre" placeholder="Nombres" class="form-control" required
+                                        onkeypress="return sololetras(event)" onpaste="return false"
+                                        title="Debe contener solo  letras ">
+                                    <!--?!.* (?: |$))-->
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" name="apellidos" required placeholder="Apellidos"
+                                        class="form-control" required onkeypress="return sololetras(event)"
+                                        onpaste="return false" title="Debe contener solo  letras ">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" name="celular" required placeholder="celular"
+                                        class="form-control" onkeypress="return solonumero(event)"
+                                        onpaste="return false" title="Debe contener 9 números y empezar con 9">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" name="dni" required placeholder="DNI" class="form-control"
+                                        onkeypress="return solonumero(event)" onpaste="return false"
+                                        title="Debe contener">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" name="correo" required placeholder="Correo" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" name="pass1" required placeholder="contraseña"
+                                        class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" name="pass2" required placeholder="repita contraseña"
+                                        class="form-control">
+
+                                </div>
+                                <!--<a href="es_login.php" class="btn btn-secondary">Volver</a>-->
+                                <input type="submit" value="Registrar" class="btn btn-success" class="button"><br>
+
+                                <br>
+                            </center>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
 <?php include('includes/footer.php');?>
-	
+
 </body>
 <script>
-				function sololetras(e){//recibe el evento parametro 
-					key=e.keyCode || e.which;
-					teclado=String.fromCharCode(key).toLowerCase();
-					letras=" abcdefghijklmnñopqrstuvwxyz";
-					especiales="8-37-38-46-164";
-					teclado_especial=false;
-					for(var i in especiales){
-						if(key==especiales[i]){
-							teclado_especial=true;break;
-						}
-					}
-					if(letras.indexOf(teclado)==-1 && !teclado_especial){
-						return false;
-					}
-				}
+function sololetras(e) { //recibe el evento parametro 
+    key = e.keyCode || e.which;
+    teclado = String.fromCharCode(key).toLowerCase();
+    letras = " abcdefghijklmnñopqrstuvwxyz";
+    especiales = "8-37-38-46-164";
+    teclado_especial = false;
+    for (var i in especiales) {
+        if (key == especiales[i]) {
+            teclado_especial = true;
+            break;
+        }
+    }
+    if (letras.indexOf(teclado) == -1 && !teclado_especial) {
+        return false;
+    }
+}
 
 
 
-				function solonumero(e){
-					key=e.keyCode || e.which;
-					teclado=String.fromCharCode(key);
-					numeros="0123456789";
-					especiales="8-37-38-46";
-					teclado_especial=false;
-					for(var i in especiales){//buscando la tecla presionada 
-						if(key==especiales[i]){
-							teclado_especial=true;
-						}
-					}
-					if(numeros.indexOf(teclado)==-1 && !teclado_especial){// si esque no encuentra va ser menos 1
-						return false;
-					}
-				}
-			</script>
-			
-				
-			
+function solonumero(e) {
+    key = e.keyCode || e.which;
+    teclado = String.fromCharCode(key);
+    numeros = "0123456789";
+    especiales = "8-37-38-46";
+    teclado_especial = false;
+    for (var i in especiales) { //buscando la tecla presionada 
+        if (key == especiales[i]) {
+            teclado_especial = true;
+        }
+    }
+    if (numeros.indexOf(teclado) == -1 && !teclado_especial) { // si esque no encuentra va ser menos 1
+        return false;
+    }
+}
+</script>
+
+
+
 </html>
-

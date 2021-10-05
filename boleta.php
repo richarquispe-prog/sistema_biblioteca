@@ -1,6 +1,5 @@
-
 <?php include('menu_estudiante.php');?>
-	<?php
+<?php
 include 'conexion.php';
 
 
@@ -15,7 +14,7 @@ $var1=$_SESSION['nombre'];
 
 
 ?>
-	<?php
+<?php
 include 'conexion.php';
 $sql="SELECT * FROM `boleta` WHERE `DNI`=$var";
 		$query=mysqli_query($conexion,$sql);
@@ -34,43 +33,49 @@ $sql="SELECT * from libro WHERE n_control='$n_controls'";
 $result=mysqli_query($conexion,$sql);
 while($mostrar=mysqli_fetch_array($result)){?>
 
-			<div class="mb-3" >
-			
-			</div>
+<div class="mb-3">
 
-<center>	
-	<div class="container-fluid">
-	<!--      Card Ediit    -->
-     <div class="row">
-     <div class="col-lg-6 m-auto">
-     <div class="card shadow mb-4">
+</div>
 
-				<div class="card-header py-3">
-						 	<h4 class="m-0 font-weight-bold text-secondary">
-									BOLETA  
-						    </h4>
-			    </div>
-			    <?php echo isset($alert) ? $alert : ""; ?>
+<center>
+    <div class="container-fluid">
+        <!--      Card Ediit    -->
+        <div class="row">
+            <div class="col-lg-6 m-auto">
+                <div class="card shadow mb-4">
 
-  	 	<h5 class="m-0 font-weight-bold text-primary" >Código del Libro::  </h5> <h5><?php echo $n_controls ?></h5>
-    	<h5 class="m-0 font-weight-bold text-primary">Título:  </h5> <h5><?php echo $mostrar['titulo'] ?></h5>
-     	<h5 class="m-0 font-weight-bold text-primary">Autor: <BR> </h5> <h5><?php echo$mostrar['autor'] ?></h5>
-   		<h5 class="m-0 font-weight-bold text-primary">Usuario: <BR> </h5> <h5><?php echo $var1 ?></h5>
-   		<h5 class="m-0 font-weight-bold text-primary">DNI: <BR> </h5> <h5><?php echo $var ?></h5>
-   <!-- <a href="#" class="btn btn-primary">Go somewhere</a>-->
-   <form action="" method="post">
-		   	<center> <a href="catalogo.php" class="btn btn-secondary">Cancelar</a>
-		   <input type="submit" value ="Aceptar Boleta"  class="btn btn-primary" disabled name="v">
-   </form>
-<br> <br>
-  </div>
-  </div>
-  </div>
-  </div></center>
+                    <div class="card-header py-3">
+                        <h4 class="m-0 font-weight-bold text-secondary">
+                            BOLETA
+                        </h4>
+                    </div>
+                    <?php echo isset($alert) ? $alert : ""; ?>
+
+                    <h5 class="m-0 font-weight-bold text-primary">Código del Libro:: </h5>
+                    <h5><?php echo $n_controls ?></h5>
+                    <h5 class="m-0 font-weight-bold text-primary">Título: </h5>
+                    <h5><?php echo $mostrar['titulo'] ?></h5>
+                    <h5 class="m-0 font-weight-bold text-primary">Autor: <BR> </h5>
+                    <h5><?php echo$mostrar['autor'] ?></h5>
+                    <h5 class="m-0 font-weight-bold text-primary">Usuario: <BR> </h5>
+                    <h5><?php echo $var1 ?></h5>
+                    <h5 class="m-0 font-weight-bold text-primary">DNI: <BR> </h5>
+                    <h5><?php echo $var ?></h5>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    <form action="" method="post">
+                        <center> <a href="catalogo.php" class="btn btn-secondary">Cancelar</a>
+                            <input type="submit" value="Aceptar Boleta" class="btn btn-primary" disabled name="v">
+                    </form>
+                    <br> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
 
 
 
-			<?php
+<?php
 
 
 			?>
@@ -100,7 +105,7 @@ $insertar="INSERT INTO boleta(DNI, n_control, fecha_entrega,codigo_boleta,fecha_
                     ?>
 
 
-		<?php
+<?php
 		//echo" dato guardado";		
 		
 	}else{
@@ -124,47 +129,52 @@ $sql="SELECT * from libro WHERE n_control='$n_controls'";
 $result=mysqli_query($conexion,$sql);
 while($mostrar=mysqli_fetch_array($result)){?>
 
-			<div class="mb-3" >		
-			</div>
-		
+<div class="mb-3">
+</div>
+
 <center>
-	<div class="container-fluid">
-	<!--      Card Ediit    -->
-     <div class="row">
-     <div class="col-lg-6 m-auto">
-     <div class="card shadow mb-4">
-	<div class="card-header py-3">
-			 <h4 class="m-0 font-weight-bold text-secondary">
-			BOLETA
-			 </h4>
+    <div class="container-fluid">
+        <!--      Card Ediit    -->
+        <div class="row">
+            <div class="col-lg-6 m-auto">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h4 class="m-0 font-weight-bold text-secondary">
+                            BOLETA
+                        </h4>
+                    </div>
+
+
+                    <h5 class="m-0 font-weight-bold text-primary">Código del Libro: </h5>
+                    <h5><?php echo $n_controls ?></h5>
+                    <h5 class="m-0 font-weight-bold text-primary">Título: </h5>
+                    <h5><?php echo $mostrar['titulo'] ?></h5>
+                    <h5 class="m-0 font-weight-bold text-primary">Autor: <BR> </h5>
+                    <h5><?php echo$mostrar['autor'] ?></h5>
+                    <h5 class="m-0 font-weight-bold text-primary">Usuario: <BR> </h5>
+                    <h5><?php echo $var1 ?></h5>
+                    <h5 class="m-0 font-weight-bold text-primary">DNI : <BR> </h5>
+                    <h5><?php echo $var ?></h5>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a>-->
+
+                    <br>
+                    <form action="" method="post">
+
+                        <center> <a href="catalogo.php" class="btn btn-secondary">Cancelar</a>
+
+                            <input type="submit" value="Aceptar Boleta" class="btn btn-primary" name="v">
+
+                    </form>
+                    <br> <br>
+                </div>
+            </div>
+        </div>
     </div>
-   
-
-	  	<h5 class="m-0 font-weight-bold text-primary" >Código del Libro:  </h5> <h5><?php echo $n_controls ?></h5>
-	    <h5 class="m-0 font-weight-bold text-primary">Título:  </h5> <h5><?php echo $mostrar['titulo'] ?></h5>
-	    <h5 class="m-0 font-weight-bold text-primary">Autor: <BR> </h5> <h5><?php echo$mostrar['autor'] ?></h5>
-	   	<h5 class="m-0 font-weight-bold text-primary">Usuario: <BR> </h5> <h5><?php echo $var1 ?></h5>
-	   	<h5 class="m-0 font-weight-bold text-primary">DNI : <BR> </h5> <h5><?php echo $var ?></h5>
-   <!-- <a href="#" class="btn btn-primary">Go somewhere</a>-->
-   
-<br>
-   <form action="" method="post">
-
-   	<center> <a href="catalogo.php" class="btn btn-secondary">Cancelar</a>  		 	
-   		
-  	<input type="submit" value ="Aceptar Boleta"  class="btn btn-primary" name="v" >
-    
-   </form>
-   <br> <br>
-  </div>
-  </div>
-  </div>
-  </div>
 </center>
 
 
 
-			<?php
+<?php
 
 
 			?>
@@ -211,7 +221,7 @@ echo"error";
 
 
 
-		<?php
+<?php
 		//echo" dato guardado";
 
 		
@@ -226,7 +236,5 @@ echo"error";
 ?>
 <?php include('includes/footer.php');?>
 </body>
-  
+
 </html>
-
-
