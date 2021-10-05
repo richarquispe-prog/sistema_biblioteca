@@ -2,54 +2,12 @@
 <html>
 
 <head>
-<<<<<<< HEAD
-    <meta charset="utf-8">
-    <title>Biblioteca EPIS</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
-=======
 	<meta charset="utf-8">
-    <title>BIBLIOTECA EPIS</title>
+    <title>Biblioteca EPIS</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
->>>>>>> 7bbad08991b0d4ddb1ef074012a6aa0292a24c6a
     <link type="image/x-icon" href="../img/epis1.png" rel="shortcut icon">
 </head>
-
 <body>
-<<<<<<< HEAD
-    <header class="cabecera">
-        <div class="cabecera__fondo--nitido"></div>
-        <div class="cabecera__capa"></div>
-        <div class="cabecera__contenido">
-            <img src="../img/epis1.png" alt="Funcion 13 Logo" class="logo">
-            <h1>SISTEMA DE BIBLIOTECA</h1>
-            <p>Escuela Profesional de Ingenieria de Sistemas</p>
-        </div>
-        <nav class="nav">
-            <div class="nav__columna nav__pull"></div>
-            <ul class="nav__columna nav__enlaces">
-                <li><a href="index.php">Inicio</a></li>
-                <li><a href="catalogo.php">Ubicacion</a></li>
-                <li><a href="https://goo.gl/maps/YGddP8BJ74DW9uu5A">Mapa_sitio</a></li>
-                <li><a href="#">Contactenos</a></li>
-                <li class="dropdown">
-                    <span>Ingresar
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                            class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                            <path fill-rule="evenodd"
-                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                        </svg>
-                    </span>
-                    <ul>
-                        <li><a class="dropdown-toggle" href="adm_login.php">Administrador </a></li>
-                        <li><a class="dropdown-toggle" href="es_login.php">Estudiante </a> </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section class="section1-center">
-=======
 <header class="cabecera">
     <div class="cabecera__fondo--nitido"></div>
     <div class="cabecera__capa"></div>
@@ -81,7 +39,6 @@
     </nav>
 </header>
 <section class="section1-center">
->>>>>>> 7bbad08991b0d4ddb1ef074012a6aa0292a24c6a
         <div class="cont-video-bg" style="position:relative; width: 100%; top: 0; left: 0">
             <br><br><br><br><br>
             <video autoplay muted loop id="myVideo" style="min-width: 100%">
