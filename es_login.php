@@ -39,7 +39,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
     <section id="conta" class="conta">
         <form method="post" class="es_login">
             <!--si esque ocurre el metodo post-->
@@ -54,19 +53,6 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-person-fill" viewBox="0 0 16 16">
                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-=======
-	<section id="conta"class="conta">
-		<form  method="post" class="es_login"><!--si esque ocurre el metodo post-->
-			<img src="img/sistemas.png" width="300" height="100">
-			<center>
-				<h2>ESTUDIANTE</h2>
-				<br>
-				<!--<h3>BIENVENIDO</h3><br>-->
-				<p>Iniciar Sesión</p><br><br>
-				<?php echo isset($alert) ? $alert : ""; ?><!--INGRESO-->
-				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
->>>>>>> 7bbad08991b0d4ddb1ef074012a6aa0292a24c6a
                 </svg>
 
                 <input type="text" name="correo" required placeholder="Correo Institucional">
