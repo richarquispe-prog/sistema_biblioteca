@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
     <link type="image/x-icon" href="../img/epis1.png" rel="shortcut icon">
 </head>
-<body>
+<body>  
 <header class="cabecera">
     <div class="cabecera__fondo--nitido"></div>
     <div class="cabecera__capa"></div>
@@ -48,7 +48,7 @@
     </section>
 
     <footer class="pie_pagina">
-        <p>©Copyright 2050 de Richar. Todos los derechos reservados.</p>
+        <p>©Copyright 2050 EQUIPO 1. Todos los derechos reservados.</p>
     </footer>
 </body>
 <script>
