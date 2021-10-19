@@ -1,9 +1,8 @@
 <?php include('menu_administrador.php');?>
-<?php include('conexion.php');?>
+<?php include('conexion.php'); ?>
 
-<html>
+<br>
 <div class="container-fluid">
-
     <div id="main-containe">
 
         <!--<center><h1>BOLETAS</h1></center>-->
@@ -43,20 +42,18 @@
                             </thead>
 
                             <?php 
-                                //$sql="SELECT * from boleta ";
-                                $sql1=" SELECT boleta.codigo_boleta,usuarios.nombre,usuarios.apellidos,usuarios.DNI,usuarios.Correo_Institucional,libro.n_control,libro.titulo,boleta.fecha_entrega,boleta.fecha_devolucion from usuarios JOIN boleta ON boleta.DNI= usuarios.DNI INNER JOIN libro ON libro.n_control= boleta.n_control";
-                                $result=mysqli_query($conexion,$sql1);
+		//$sql="SELECT * from boleta ";
+		$sql1=" SELECT boleta.codigo_boleta,usuarios.nombre,usuarios.apellidos,usuarios.DNI,usuarios.Correo_Institucional,libro.n_control,libro.titulo,boleta.fecha_entrega,boleta.fecha_devolucion from usuarios JOIN boleta ON boleta.DNI= usuarios.DNI INNER JOIN libro ON libro.n_control= boleta.n_control";
+		$result=mysqli_query($conexion,$sql1);
 
-                                while($mostrar=mysqli_fetch_array($result)){
-                                    
-                            ?>
-
+		while($mostrar=mysqli_fetch_array($result)){                   
+		 ?>
                             <tr>
                                 <td><?php echo $mostrar['codigo_boleta'] ?></td>
                                 <td><?php echo $mostrar['nombre'] ?></td>
                                 <td><?php echo $mostrar['apellidos'] ?></td>
                                 <td><?php echo $mostrar['DNI'] ?></td>
-                                <!--<td><?php// echo $mostrar['Correo_Institucional'] ?></td>-->
+                                <!--<td><?php ?> // echo $mostrar['Correo_Institucional']</td>-->
 
                                 <td><?php echo $mostrar['titulo'] ?></td>
                                 <td><?php echo $mostrar['n_control'] ?></td>
@@ -66,9 +63,13 @@
                                 <td><a href="eliminar_boleta_adm.php?codigo_boleta=<?php echo $mostrar['codigo_boleta']; ?>"
                                         class="btn btn-outline-danger">
                                         Eliminar</td>
+                                <!--<td><?php //echo $mostrar['imagen'] ?></td>--
+                                <?php		?>
+                                <?php       ?>
                             </tr>
-                                }
-                            
+                            <?php 
+	    }
+	 ?>
                         </table>
                     </div>
                 </div>
