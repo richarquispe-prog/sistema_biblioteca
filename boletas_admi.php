@@ -53,7 +53,7 @@
                                 <td><?php echo $mostrar['nombre'] ?></td>
                                 <td><?php echo $mostrar['apellidos'] ?></td>
                                 <td><?php echo $mostrar['DNI'] ?></td>
-                                <!--<td><?php ?> // echo $mostrar['Correo_Institucional']</td>-->
+                                <!--<td><?php ?>// echo $mostrar['Correo_Institucional']</td>-->
 
                                 <td><?php echo $mostrar['titulo'] ?></td>
                                 <td><?php echo $mostrar['n_control'] ?></td>
